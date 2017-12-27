@@ -1,38 +1,44 @@
 # ----------- CONFIGURABLE START -----------
-title:            "LiberXue|FullStack|独立开发者|jekyll blog|GitHub blog"
-description:      "Full Stack独立开发者|欢迎来到 LiberXue「角落」侃侃理想、谈谈人生、敲敲代码。"
-url:              https://liberxue.github.io # 域名
-signoff:          "LiberXue" # Your name
+title:            "北京优旅---内部文档"
+description:      "北京优旅|国际机票"
+# url:              https://liberxue.github.io # 域名
+url:              http://docs-jk.worthytrip.com # 域名
+host:             docs-jk.worthytrip.com
+signoff:          "worthytrip" # Your name
 facebook_appid:   #liberxue
-google_analytics: UA-101222464-1
+#google_analytics: UA-101222464-1
 share:            true 
 # 分页
-paginate: 15
+paginate: 9 
 paginate_path: "liberxuepage:num"
-gems: [jekyll-paginate]
+#paginate_path: "page:num"
+plugins: [jekyll-paginate]
 links:
   - name:         首页
     url:          /
-    external:     false
-  - name:         书籍
-    url:          /book
-    external:     false
-  - name:         旅游
-    url:          /road
-    external:     false
+    external:     true
+  - name:         技术
+    url:          /tech
+    external:     true
+  - name:         业务
+    url:          /business
+    external:     true
+  - name:         接口规范
+    url:          /spec
+    external:     true
   - name:         归档
     url:          /archives
-    external:     false
+    external:     true
   - name:         标签
     url:          /tags
-    external:     false
+    external:     true
   - name:         关于
     url:          /about
-    external:     false
+    external:     true
 # ------------ CONFIGURABLE END ------------
 
 #permalink:        /:categories/:title.html
-permalink: /:year/:month/:day/:title.html
+#permalink: /:year/:month/:day/:title.html
 defaults:
   - values:
       layout: "default"
